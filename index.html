@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Long Hair Center</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/style.css">
@@ -18,13 +14,12 @@
 
     <div class="container-fluid background-slide">
         <div class="row navigation">
-            <div class="col-lg-3 col-md-6 col-sm-9 col-xs-3">
-              <a class="site-logo" href="#"><img src="/assets/img/logo.png" alt="logo"></a>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <a href="#"><img class="site-logo" src="../longhair/assets/img/logo.png" alt="logo" /></a>
             </div>
-            <div class="col-lg-9 col-md-6 col-sm-3 col-xs-9">
+            <div class="col-lg-9 col-md-6 col-sm-6">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                             <span class="navbar-toggler-icon"></span>
                           </button>
                         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,54 +33,94 @@
                                 <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link text-white" href="#">İletişim</a></li>
                                 <li class="nav-item dropdown lang">
-                                  <button class="btn btn-transparent border-white text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <a type="button" class="btn btn-transparent dropdown-toggle border-1 border-white text-white rounded-pill" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     EN
                                   </a>
-                                  <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">TR</a></li>
                                     <li><a class="dropdown-item" href="#">EN</a></li>
                                   </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                  <button class="btn btn-transparent border-white text-white rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <a type="button" class="btn btn-outline-secondary dropdown-toggle border-1 border-white text-white rounded-pill" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     WHATSAPP
-                                  </button>
+                                  </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">555555</a></li>
-                                    <li><a class="dropdown-item" href="#">5555555555</a></li>
+                                    <li><a class="dropdown-item" href="#">55555555555</a></li>
                                   </ul>
                                 </li>
                             </ul>
                         </div>
-                    </div>
                 </nav>
             </div>
         </div>
         <div class="row header-main">
           <div class="col-lg-6 col-md-12">
             <div id="slides" class="carousel slide" data-ride="carousel">
-              <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-                <li data-target="#slides" data-slide-to="3"></li>
-                <li data-target="#slides" data-slide-to="4"></li>
-                <li data-target="#slides" data-slide-to="5"></li>
-              </ul>
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="card bg-transparent border-0 hair-card">
                     <div class="card-body">
                       <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
-                      <p class="card-text text-white" style="width: 18rem;">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
-                      <a href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                      <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
                     </div>
                   </div>
                 </div>
-                  <div class="carousel-item"></div>
-                  <div class="carousel-item"></div>
-                  <div class="carousel-item"></div>
-                  <div class="carousel-item"></div>
+                  <div class="carousel-item">
+                    <div class="card bg-transparent border-0 hair-card">
+                      <div class="card-body">
+                        <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
+                        <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                        <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card bg-transparent border-0 hair-card">
+                      <div class="card-body">
+                        <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
+                        <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                        <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card bg-transparent border-0 hair-card">
+                      <div class="card-body">
+                        <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
+                        <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                        <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card bg-transparent border-0 hair-card">
+                      <div class="card-body">
+                        <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
+                        <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                        <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card bg-transparent border-0 hair-card">
+                      <div class="card-body">
+                        <h5 class="card-title text-white display-4">Saç Ekimi Analizi</h5>
+                        <p class="card-text text-white">Doktor ile ön görüşme notlarınızı online olarak bize bu formla iletebilirsiniz.</p>
+                        <a type="button" href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Devamını inceleyin</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +134,7 @@
                     <div class="mb-3">
                       <input type="text"class="form-control item bg-transparent border-0" placeholder="Telefon Numaranız">
                     </div>
-                    <button type="submit" class="btn btn-secondary border-0" style="width: 15rem;">BENİ ARAYIN</button>
+                    <button type="submit" class="btn btn-dark border-0" style="width: 15rem;">BENİ ARAYIN</button>
                   </form>
               </div>
             </div>
@@ -110,12 +145,12 @@
 
     <!-- PROCESS FIRST -->
 
-    <div class="container-fluid padding process-container">
+    <div class="container-fluid process-container">
       <div class="row">
-        <div class="col-xl-5 process-left-side">
-          <img src="/assets/img/process-left.png" alt="process-left">
+        <div class="col-xl-6 process-left-side">
+          <img src="../longhair/assets/img/process-left.png" alt="process-left" />
         </div>
-        <div class="col-xl-5 process-right-side">
+        <div class="col-xl-6 process-right-side">
           <h3 class="text-black display-6" style="font-weight: bold;">FUE</h3>
           <h6 class="text-secondary" style="font-size: 1.7rem">Hair Transplant Process</h6>
           <p class="text-secondary" style="font-size: 1.1rem; font-weight: lighter;">
@@ -132,14 +167,14 @@
     <!-- COMMENT FIRST -->
 
     <div class="container-fluid comment-container">
-      <div class="row padding">
+      <div class="row">
         <div class="col-md-6">
           <div class="comment-side">
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title" style="font-size: 28px;">İsmail A.<span class="text-secondary" style="font-size: 14px; float: right;">19 Haziran 2021</span></h5>
-                <div class="body-text">
-                  <img src="/assets/img/quotes.png" alt="quotes">
+                <div class="body-text d-flex align-items-center justify-content-center">
+                  <img style="padding-right: 20px;" src="../longhair/assets/img/quotes.png" alt="quotes" />
                   <p class="card-text card-paragraph">Saç ekimi ile ilgili yorum bu bölüme girilecektir. Saç ekimi ile ilgili yorum bu bölüme girilecektir. Yorum bu bölüme giri..<a href="#" class="text-decoration-none text-secondary"><strong>Devamını Oku</strong></a></p>
                 </div>
               </div>
@@ -147,8 +182,8 @@
             <div class="card mb-3">
               <div class="card-body">
                 <h5 class="card-title" style="font-size: 28px;">İsmail A.<span class="text-secondary" style="font-size: 14px; float: right;">19 Haziran 2021</span></h5>
-                <div class="body-text">
-                  <img src="/assets/img/quotes.png" alt="quotes">
+                <div class="body-text d-flex align-items-center justify-content-center">
+                  <img style="padding-right: 20px;" src="../longhair/assets/img/quotes.png" alt="quotes" />
                   <p class="card-text card-paragraph">Saç ekimi ile ilgili yorum bu bölüme girilecektir. Saç ekimi ile ilgili yorum bu bölüme girilecektir. Yorum bu bölüme giri..<a href="#" class="text-decoration-none text-secondary"><strong>Devamını Oku</strong></a></p>
                 </div>
               </div>
@@ -156,8 +191,8 @@
             <div class="card opacity-50">
               <div class="card-body">
                 <h5 class="card-title" style="font-size: 28px;">İsmail A.<span class="text-secondary" style="font-size: 14px; float: right;">19 Haziran 2021</span></h5>
-                <div class="body-text">
-                  <img src="/assets/img/quotes.png" alt="quotes">
+                <div class="body-text d-flex align-items-center justify-content-center">
+                  <img style="padding-right: 20px;" src="../longhair/assets/img/quotes.png" alt="quotes" />
                   <p class="card-text card-paragraph">Saç ekimi ile ilgili yorum bu bölüme girilecektir. Saç ekimi ile ilgili yorum bu bölüme girilecektir. Yorum bu bölüme giri..<a href="#" class="text-decoration-none text-secondary"><strong>Devamını Oku</strong></a></p>
                 </div>
               </div>
@@ -166,18 +201,18 @@
         </div>
         <div class="col-md-6">
           <div class="card bg-transparent border-0">
-            <div class="hair-card">
+            <div class="hair-card-right text-center">
               <div class="card-body">
                 <p class="card-text text-secondary" style="font-size: 1.5rem">Saç ekimi yaptıran müşterilerimizin</p>
                 <h5 class="card-title" style="font-size: 2rem; font-weight: bolder">Görüşlerini Okuyun!</h5>
                 <div class="card-button">
                   <a href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>Sizde Yorum Yapın</a>
-                  <a href="#" class="btn btn-danger rounded-pill border-0 text-black"><span class="arrow-right-black"></span>Tümünü Okuyun</a>
+                  <a href="#" class="btn btn-info rounded-pill border-0 text-black"><span class="arrow-right-black"></span>Tümünü Okuyun</a>
                 </div>
               </div>
-              <div class="score-container">
-                <img src="/assets/img/google.png" alt="google">
-                <img src="/assets/img/trust.png" alt="trust">
+              <div class="score-container text-center">
+                <img src="../longhair/assets/img/google.png" alt="google" />
+                <img src="../longhair/assets/img/trust.png" alt="trust" />
               </div>
             </div>
           </div>
@@ -191,7 +226,7 @@
               <p>Saç analizi için cinsiyet seçerek başlayınız.</p>
             </div>
           </div>
-          <a href="#" class="btn btn-secondary rounded-pill border-0 hair-box-button"><span class="arrow-right"></span>Seç ve devam et</a>
+          <a href="#" class="btn btn-dark rounded-pill border-0 hair-box-button"><span class="arrow-right"></span>Seç ve devam et</a>
         </div>
       </div>
     </div>
@@ -203,10 +238,10 @@
     <div class="container-fluid before-after-container" style="background-color: white;">
       <div class="row">
         <div class="col-lg-6 col-sm-12 before-after">
-          <img src="/assets/img/bef-aft.png" class="img-fluid" alt="before-after">
-          <img src="/assets/img/bef-aft.png" class="img-fluid" alt="before-after">
-          <img src="/assets/img/bef-aft.png" class="img-fluid" alt="before-after">
-          <img src="/assets/img/bef-aft.png" class="img-fluid" alt="before-after">
+          <img src="../longhair/assets/img/bef-aft.png" class="img-fluid" alt="before-after" />
+          <img src="../longhair/assets/img/bef-aft.png" class="img-fluid" alt="before-after" />
+          <img src="../longhair/assets/img/bef-aft.png" class="img-fluid" alt="before-after" />
+          <img src="../longhair/assets/img/bef-aft.png" class="img-fluid" alt="before-after" />
         </div>
         <div class="col-lg-6 before-after-text">
           <h3>Türkiye'de saç ekimi: hastalarımızdan <strong>öncesi ve sonrası fotoğrafları</strong></h3>
@@ -225,7 +260,7 @@
             dramatik değişimi gösteriyor.
           </p>
           <br>
-          <a href="#" class="btn btn-primary rounded-pill"><span class="arrow-right"></span>İletişime geçin</a>
+          <a href="#" class="btn btn-primary rounded-pill border-0"><span class="arrow-right"></span>İletişime geçin</a>
         </div>
       </div>
     </div>
@@ -235,13 +270,158 @@
     <!-- SERVICES FIRST -->
 
     <div class="container-fluid service-container">
+      <p class="text-center" style="margin: 0;">
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-3" role="button" aria-expanded="false" aria-controls="collapse-3"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-4" role="button" aria-expanded="false" aria-controls="collapse-4"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-5" role="button" aria-expanded="false" aria-controls="collapse-5"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+        <a class="btn btn-primary border-0" data-bs-toggle="collapse" href="#collapse-6" role="button" aria-expanded="false" aria-controls="collapse-6"><img src="../longhair/assets/img/service-1.png" alt="first-button" /></a>
+      </p>
       <div class="row text-center">
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
-        <div class="col-lg-2"><a href="#"><img src="/assets/img/service-1.png" alt="first-button"></a></div>
+        <div class="col-12 bg-light">
+          <div class="collapsing multi-collapse" id="collapse-1">
+            <div class="card card-body">
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="collapse multi-collapse" id="collapse-2">
+            <div class="card card-body">
+              <h1>2</h1>
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="collapse multi-collapse" id="collapse-3">
+            <div class="card card-body">
+              <h1>3</h1>
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="collapse multi-collapse" id="collapse-4">
+            <div class="card card-body">
+              <h1>4</h1>
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="collapse multi-collapse" id="collapse-5">
+            <div class="card card-body">
+              <h1>5</h1>
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 bg-light">
+          <div class="collapse multi-collapse" id="collapse-6">
+            <div class="card card-body">
+              <h1>6</h1>
+              <p>
+                Saç ekimi, ‘saç dökülmesi sorununun kalıcı çözümü’ olarak ifade edilebilir. Saç ekimi operasyonu ise, 
+                hastane ortamında yapılan mikro cerrahi bir operasyon olarak tanımlanabilir ve mikro cerrahi operasyon 
+                ifadesi ile anlatılmak istenen, saç ekiminde normal bir ameliyattan çok daha az müdahalelerle saç nakli 
+                işlemi gerçekleştirilmesidir.
+              </p>
+              <p>
+                Saç ekim operasyonu, tıbbi olarak erkek tipi saç dökülmesi olarak bilinen androgenetik alopesi yaşayan 
+                kişiler için etkili ve kalıcı bir çözümdür ama bunun dışında, yara izleri olanlar ya da çeşitli saç 
+                hastalıkları ile saç kaybına uğrayan kişiler de bu operasyonu rahatlıkla yaptırabilir.
+              </p>
+              <h4>FUE Saç Ekimi Operasyonu</h4>
+              <p>
+                Saç ekiminin gelişimi çok eskilere dayansa da dünyada saç ekimi 1990’lı yılların ortalarında günümüzdeki 
+                anlamıyla kullanılmaya başlanmıştır. 1990’lı yıllarda FUT yöntemi ile yapılan saç ekimi 2000’li yılların 
+                başlarında geliştirilen ve 2005 yılından sonra kullanılmaya başlayan FUE yöntemine yerini bırakmıştır...
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row text-secondary">
         <div class="col-12 bg-light">
@@ -265,7 +445,7 @@
             </p>
           </div>
           <div class="bottom-buttons text-center mb-5">
-            <a href="#" type="button" class="btn btn-secondary border-0 rounded-pill"><span class="arrow-right"></span>Detaylı inceleyin</a>
+            <a href="#" type="button" class="btn btn-dark border-0 rounded-pill"><span class="arrow-right"></span>Detaylı inceleyin</a>
             <a href="#" type="button" class="btn btn-primary border-0 rounded-pill"><span class="arrow-right"></span>İletişime Geçin</a>
           </div>
       </div>
@@ -278,10 +458,10 @@
 
     <div class="container-fluid about-container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 about-left-side">
-          <div class="left-img"></div>
+        <div class="col-lg-6 col-md-12 col-sm-12 about-left-side">
+          <img src="../longhair/assets/img/doctor.png" alt="doctor" />
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 about-right-side">
+        <div class="col-lg-6 col-md-12 col-sm-12 about-right-side">
           <h3 class="text-uppercase">Long Hair Center İstanbul</h3>
           <p>
             Although our aim is to provide all the best possible services to the patients with our whole
@@ -310,6 +490,28 @@
           <p class="text-secondary" style="font-size: 1.1rem;">Transferinizden konaklamanıza kadar detaylı hizmet</p>
         </div>
       </div>
+      <div class="row text-center service-background">
+        <div class="col-lg-3">
+          <a href="#" type="button" class="btn btn-primary rounded-circle border-0 p-5"><img src="../longhair/assets/img/telephone-white.png" alt="phone" /></a>
+          <p class="text-secondary m-5">Bize Ulaşın</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#" type="button" class="btn btn-primary rounded-circle border-0 p-5"><img src="../longhair/assets/img/otel.png" alt="phone" /></a>
+          <p class="text-secondary m-5">Otel</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#" type="button" class="btn btn-primary rounded-circle border-0 p-5"><img src="../longhair/assets/img/car.png" alt="phone" /></a>
+          <p class="text-secondary m-5">Transfer</p>
+        </div>
+        <div class="col-lg-2">
+          <a href="#" type="button" class="btn btn-primary rounded-circle border-0 p-5"><img src="../longhair/assets/img/hospital.png" alt="phone" /></a>
+          <p class="text-secondary m-5">Hastane</p>
+        </div>
+        <div class="col-lg-3">
+          <a href="#" type="button" class="btn btn-primary rounded-circle border-0 p-5"><img src="../longhair/assets/img/world.png" alt="phone" /></a>
+          <p class="text-secondary m-5">Kültür Turları</p>
+        </div>
+      </div>
     </div>
 
     <!-- ABOUT END -->
@@ -319,13 +521,13 @@
     <div class="container-fluid video-container">
       <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 video-left-side">
-          <img class="m-5" src="/assets/img/profile.png" alt="profile">
+          <img class="m-5" src="../longhair/assets/img/profile.png" alt="profile" />
           <p class="m-5">
             “ Bu alana gerekli bilgiler girilcektir. Bu alana gerekli bilgiler girilcektir. 
             Bu alana gerekli bilgiler girilcektir. Bu alana gerekli bilgiler girilcektir. 
             Bu alana gerekli bilgiler girilcektir. “
           </p>
-          <a href="#" type="button" class="btn btn-primary m-5"><span class="arrow-right"></span>İletişime Geçin</a>
+          <a href="#" type="button" class="btn btn-primary m-5 rounded-pill border-0"><span class="arrow-right"></span>İletişime Geçin</a>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 videos">
           <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
@@ -342,7 +544,7 @@
         <div class="col-lg-3">
           <div class="contact-item">
             <h5 class="text-uppercase" style="color: #db761c;">Sertifikalarımız</h5>
-            <img src="/assets/img/iso.png" alt="iso">
+            <img src="../longhair/assets/img/iso.png" alt="iso" />
           </div>
         </div>
         <div class="col-lg-3">
@@ -358,14 +560,14 @@
         <div class="col-lg-3">
           <div class="contact-item">
             <h5 class="text-uppercase" style="color: #db761c;">Bize Ulaşın</h5>
-            <img src="/assets/img/telephone.png" alt="iso">
+            <img src="../longhair/assets/img/telephone.png" alt="iso" />
             <h5 class="text-secondary">0 532 133 37 48</h5>
             <h6 class="text-secondary">info@longhaircenter.com</h6>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="contact-item">
-            <h5 class="text-uppercase" style="color: #db761c;">Google Maps</h5>
+          <div class="contact-item map-location">
+            <img src="../longhair/assets/img/google-map.png" style="width: 100%;" alt="map-location">
           </div>
         </div>
       </div>
@@ -409,7 +611,7 @@
           </ul>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12">
-          <a href="#"><img src="/assets/img/logo.png" alt="logo-footer"></a>
+          <a href="#"><img src="../longhair/assets/img/logo.png" alt="logo-footer" /></a>
         </div>
       </div>
     </div>
@@ -426,5 +628,8 @@
       </script>
       
       <script src="...google-api-key..."></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

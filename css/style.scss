@@ -30,10 +30,6 @@
   font-family: "HeroNew", sans-serif;
 }
 
-:root {
-  font: inherit;
-}
-
 html,
 body {
   background-color: gray;
@@ -49,14 +45,14 @@ body {
   background-size: cover;
 }
 
-.header-main {
-  height: 100%;
-  width: 100%;
+.site-logo {
+  height: auto;
+  width: auto;
 }
 
-.container-fluid {
-  height: 100%;
-  width: 100%;
+.header-main {
+  height: auto;
+  width: auto;
 }
 
 .navigation {
@@ -65,38 +61,34 @@ body {
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
   background-color: #fff;
 }
 
 .dropdown {
-  margin-left: 20px;
   :hover {
     background-color: #65c7f2;
   }
-}
-
-.lang {
-  margin-left: 100px;
 }
 
 .dropdown-menu {
   background-color: #fff;
 }
 
+.lang {
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
 .btn-primary {
-  background-color: #65c7f2 !important;
+  background-color: #65c7f2;
 }
 
-.btn-secondary {
-  background-color: #db761c !important;
-  :hover {
-    background-color: #22a0d8;
-  }
+.btn-dark {
+  background-color: #db761c;
 }
 
-.btn-danger {
-  background-color: #fff !important;
+.btn-info {
+  background-color: #fff;
 }
 
 .arrow-right {
@@ -113,10 +105,6 @@ body {
   padding: 0 20px 0 10px;
 }
 
-.slide {
-  height: 100%;
-  width: 100%;
-}
 .left-side {
   height: 100%;
   width: 100%;
@@ -178,8 +166,14 @@ body {
 }
 
 .hair-card {
-  margin-left: 25%;
-  margin-top: 25%;
+  margin-left: 10%;
+  margin-top: 35%;
+  margin-bottom: 10%;
+}
+
+.hair-card-right {
+  margin-left: 10%;
+  margin-top: 15%;
 }
 
 .comment-side {
@@ -206,7 +200,7 @@ body {
 
 .service-container {
   height: auto;
-  width: 100%;
+  width: auto;
   background-color: #65c7f2;
   img {
     background-color: #84d2f4;
@@ -216,28 +210,30 @@ body {
   }
 }
 
+.service-background {
+  //background: url("../assets/img/services-back.png") no-repeat center;
+}
+
 .about-container {
   height: auto;
-  width: 100%;
+  width: auto;
   background: url("../assets/img/ground.png") center;
   background-color: #f2f7fc;
   background-size: cover;
 }
 
 .about-left-side {
-  padding: 0 !important;
-}
-.left-img {
-  background: url("../assets/img/doctor.png") no-repeat center;
-  background-size: cover;
-  height: 100%;
-  width: auto;
+  padding: 0;
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .about-right-side {
   background-color: #fff;
-  height: 25% !important;
-  width: 50% !important;
+  height: 25%;
+  width: 50%;
   margin-top: 10%;
   margin-bottom: 10%;
 }
@@ -297,7 +293,8 @@ body {
 /*---Media Queries --*/
 @media only screen and (max-width: 992px) {
   .hair-card {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
     text-align: center;
   }
   .right-side-form {
@@ -322,11 +319,37 @@ body {
   .process-left-side {
     margin: 0;
     transform: scale(75%);
+  }
+  .site-logo {
+    width: 75%;
+  }
+  .lang {
+    margin: 0;
+  }
+  .about-right-side {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-left-side {
+    width: 100%;
+    border-radius: 0;
+  }
+  .videos {
+    width: 100%;
+    border-radius: 0;
+  }
+  .video-container {
+    padding-left: 5%;
+  }
+  .map-location {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 768px) {
   .hair-card {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
     text-align: center;
   }
   .right-side-form {
@@ -352,10 +375,36 @@ body {
     margin: 0;
     transform: scale(75%);
   }
+  .site-logo {
+    width: 60%;
+  }
+  .lang {
+    margin: 0;
+  }
+  .about-right-side {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-left-side {
+    width: 100%;
+    border-radius: 0;
+  }
+  .videos {
+    width: 100%;
+    border-radius: 0;
+  }
+  .video-container {
+    padding-left: 5%;
+  }
+  .map-location {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   .hair-card {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
     text-align: center;
   }
   .right-side-form {
@@ -380,5 +429,30 @@ body {
   .process-left-side {
     margin: 0;
     transform: scale(60%);
+  }
+  .site-logo {
+    width: 40%;
+  }
+  .lang {
+    margin: 0;
+  }
+  .about-right-side {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-left-side {
+    width: 100%;
+    border-radius: 0;
+  }
+  .videos {
+    width: 100%;
+    border-radius: 0;
+  }
+  .video-container {
+    padding-left: 5%;
+  }
+  .map-location {
+    padding: 0;
   }
 }
